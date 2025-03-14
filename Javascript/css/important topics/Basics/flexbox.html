@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item{
+            height: 100px;
+            width: 100px;
+            aspect-ratio: 1;
+            border: 1px solid black;
+            font-size: 30px;
+            /* this will given equal height and width to all the elements */
+            flex: 1;
+        }
+        .flex-container{
+            height: 500px;
+            background-color: rgb(94, 248, 89);
+            display: flex;
+            /*  */
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+            flex-direction: column;
+            flex-direction: row;
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: flex-end;
+            /* justify-content: space-evenly; */
+            align-items: flex-end;
+            /* align-items: stretch; */
+            gap: 20px;
+            flex-wrap: wrap;
+            align-content: center;
+            /* only used with flex-wrap */
+
+        }
+        .item-2{
+            height: 13em;
+            /* if some space is left in that area , it will consume it  */
+            flex-grow: 1;
+            /* this will shrink the item 5 times the original */
+            flex-shrink: 5;
+        }
+        .item-3{
+            /* this will overwrite the given width of the container and set a new one  */
+            flex-basis: 200px;
+
+            /* the only property which can change its position without the help of the container */
+            align-self: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="main-heading">CSS FLEXBOX</h1>
+    <section class="flex-container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: chapter 0; 
+            /* it tells from where the counter should start from  */
+        }
+        h2::before{
+            content: "Chapter " counter(chapter,upper-alpha) " : ";
+            /* specify the type of bullets you want in your program  */
+            counter-increment: chapter 1 ;
+            /* it tellsabout how much to increment the counter . */
+            color: blueviolet;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- counter is used to add headings to the text in the or incrementing anything in the text . -->
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, quas nihil quam corporis vel unde voluptas ipsam similique. Et veniam sequi qui, autem ad sint rerum illum tenetur veritatis architecto sed odit, commodi cumque debitis magnam nobis deserunt reprehenderit quibusdam perspiciatis quidem asperiores repudiandae culpa. Esse aliquam soluta totam tenetur. Voluptas corporis dolorem molestiae est recusandae quibusdam, architecto fuga sequi aliquid impedit quos adipisci consectetur sunt exercitationem error magnam quam velit ex enim dicta odio iste. A provident quisquam  iure eaque quod illo voluptate.</p>
+
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, quas nihil quam corporis vel unde voluptas ipsam similique. Et veniam sequi qui, autem ad sint rerum illum tenetur veritatis architecto sed odit, commodi cumque debitis magnam nobis deserunt reprehenderit quibusdam perspiciatis quidem asperiores repudiandae culpa. Esse aliquam soluta totam tenetur. Voluptas corporis dolorem molestiae est recusandae quibusdam, architecto fuga sequi aliquid impedit quos adipisci consectetur sunt exercitationem error magnam quam velit ex enim dicta odio iste. A provident quisquam  iure eaque quod illo voluptate.</p>
+
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, quas nihil quam corporis vel unde voluptas ipsam similique. Et veniam sequi qui, autem ad sint rerum illum tenetur veritatis architecto sed odit, commodi cumque debitis magnam nobis deserunt reprehenderit quibusdam perspiciatis quidem asperiores repudiandae culpa. Esse aliquam soluta totam tenetur. Voluptas corporis dolorem molestiae est recusandae quibusdam, architecto fuga sequi aliquid impedit quos adipisci consectetur sunt exercitationem error magnam quam velit ex enim dicta odio iste. A provident quisquam  iure eaque quod illo voluptate.</p>
+
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, quas nihil quam corporis vel unde voluptas ipsam similique. Et veniam sequi qui, autem ad sint rerum illum tenetur veritatis architecto sed odit, commodi cumque debitis magnam nobis deserunt reprehenderit quibusdam perspiciatis quidem asperiores repudiandae culpa. Esse aliquam soluta totam tenetur. Voluptas corporis dolorem molestiae est recusandae quibusdam, architecto fuga sequi aliquid impedit quos adipisci consectetur sunt exercitationem error magnam quam velit ex enim dicta odio iste. A provident quisquam  iure eaque quod illo voluptate.</p>
+    
+</body>
+</html>

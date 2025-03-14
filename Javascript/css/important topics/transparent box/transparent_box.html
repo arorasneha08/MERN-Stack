@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background{
+            background-image: url(flower.avif);
+            border: 1px solid black;
+            opacity: 1;
+            height: 200px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .transbox{
+            opacity: 0.6;
+            border: 1px solid black;
+            height: 100px;
+            width: 50%;
+            text-align: center;
+            background-color: aliceblue;
+            background-origin: content-box;
+            /* margin-top: auto; */
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="transbox">There is some text that is placed in the transparent box . </div>
+    </div>
+</body>
+</html>

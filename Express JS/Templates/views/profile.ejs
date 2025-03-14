@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Profile page</h1>
+    <h2>Welcome <%= user.name %></h2>
+    <h2>Email : <%= user.email %></h2>
+    <h2>City : <%= user.city %></h2>
+    <ul>
+        <% user.skills.forEach((item)=>{ %>
+            <li> <%= item %></li>
+        <% }) %>
+    </ul>
+
+    <!--adding the data of the other ejs page : header page   -->
+    <%= include('header'); %>
+    <!-- if we use the = sign we will get the html code of the whole page -->
+    <%- include('header'); %>
+    <!-- if we use - we will access the data of the page -->
+</body>
+</html>

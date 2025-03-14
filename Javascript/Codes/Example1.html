@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Best JS Course</h1>
+    <hr>
+    <p>Understanding the DOM Tree Structure</p>
+    <p>It's easy . Helps JS to communicate with HTML</p>
+    </body>
+    <script>
+        var parent = document ;
+        var bodyElement = document.body ; 
+        var headElement = document.head ; 
+        var bodyChild = bodyElement.childNodes; 
+        console.log(bodyChild); // NodeList(16) [ #text, h1, #text, hr, #text, p, #text, p, #text, ]
+
+        // 
+        let bodyChildren = bodyElement.children; 
+        console.log(bodyChildren); // 
+
+        let firstChild = bodyElement.firstChild; 
+        console.log(firstChild); // text
+
+        let firstChildElement = bodyElement.firstElementChild; 
+        console.log(firstChildElement); // h1
+
+        let lastchild = bodyElement.lastChild ; 
+        console.log(lastchild); // script
+
+        let nextSibling = firstChild.nextSibling;
+        console.log(nextSibling); // h1 
+
+        let prevSibling = nextSibling.previousSibling;
+        console.log(prevSibling); // text
+
+        let parentNode = prevSibling.parentElement;
+        console.log(parentNode) // body 
+
+        
+    </script>
+</body>
+</html>

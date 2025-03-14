@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    background-color: #2874f0;
+    justify-content: space-around;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 13vh;
+    color: white;
+    /* border: 2px solid red; */
+    margin-left: 30px;
+    text-align: end;
+}
+.logo-head{
+    /* border: 2px solid orange; */
+    align-items: end;
+}
+span{
+    color: yellow;
+    font-style: italic;
+}
+#flipkart{
+    color: white;
+}
+
+.search-bar{
+    width: 35%;
+    height: 7vh;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+}
+ul{
+    width: 30%;
+    height: 13vh;
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 50px;
+}
+ul li{
+    list-style: none;
+    color: white;
+    font-size: 17px;
+}
+.search-bar input{
+    width: 90%;
+    height: 100%;
+    border: none; /*  */
+    outline: none; /*  */
+    font-size: 15px;
+}
+.fa-solid{
+    margin-left: 4px;
+    font-size: 15px;
+}
+.fa-magnifying-glass{
+    color: #2874f0; 
+    font-size: 18px;
+}
+
+/*  */
+
+.nav2{
+    background-color: #efefef; 
+    height: 9vh;
+    width: 100%;
+}
+
+.nav2-ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    padding-left: 7px;
+    position: relative;
+    top: -15%;
+}
+.nav2-ul li{
+    color: black;
+    padding-right: 50px;
+    font-size: 15px;
+    text-align: center;
+}
+
+/*  */
+
+.outer-box{
+    height: 100%;
+    border: 2px solid black;
+    /* background-color: red; */
+    width: 100%; 
+}
+.hello{
+    margin : 20px;
+    height: 120px;
+    border: 2px solid black;
+    width: 20%;
+    margin-left: 30px;
+}
+.orders{
+    height: 500px;
+    border: 2px solid black;
+    width: 20%;
+    margin: 20px;
+    margin-left: 30px;
+}
+.info{
+    height:87.5% ;
+    width: 60%;
+    border: 2px solid black;
+    position: absolute; 
+    right: 0;
+    top: 204px;
+    margin-right: 100px;
+}
+.img1{
+    padding: 10px;
+    height: inherit; 
+    display: flex;
+}
+#hello{
+    font-size: 15px;    
+    color: black;
+    /* border: 2px solid black; */
+    width: 50%; 
+    height: 20px;
+    text-align:center;
+    font-weight: 100;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /* padding: 10px; */
+}
+.name{
+    height: 30px;
+    width: 60%;
+    /* border: 2px solid black; */
+    font-weight:bold ; 
+    font-size: 25px;
+    margin-left: 25px;
+    padding: 7px;
+}
+.inner-orders{
+    height: 10%;
+    width: 100%;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+}
+.order-photo{
+    padding: 10px ;
+    margin-left: 50px;
+}
+.myorder{
+    padding: 10px;
+    font-size: large;
+    color: #878787;
+    font-weight: 600;
+}
+.acc-setting {
+    text-align: center;
+    padding: 10px;
+}
+.setting{
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid black;
+    height: 20vh;
+    width: 100%; 
+    padding: 0;
+}
+.acc-setting img{
+    padding-right: 12px;
+}
+.setting li{
+    color: black; 
+    padding: 15px;
+    list-style: none;
+    font-size: 15px;
+}
+.payment{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 5px;
+}
+.pay{
+    text-align: center;
+    padding: 10px;
+}
+.pay img{
+    padding-right: 15px;
+}
+.cards li{
+    color: black; 
+    list-style: none;
+    font-size: 15px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    height: 20vh;
+    width: 100%; 
+    padding: 0;
+
+}
+.log {
+    text-align: center;
+    align-items: center;
+    border-top: 2px solid black;
+    padding: 10px;
+}
+.personal-info{
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+}
+.info{
+    display: flex;
+}
+.edit{
+    padding: 10px;
+    position: relative;
+    top: 14px;
+    color: blue;
+    font-size: small;
+}
+.input-box{
+    position: relative;
+    top: 10%;
+    /* border: 2px solid red; */
+    height: 10%;
+    right: 25%;
+    display: flex;
+    gap: 10px;
+    width: 60%;
+}
+.input-box input{
+    padding: 10px;
+    width: 100%;
+}
+.gen{
+    position: absolute; 
+    top: 20% ;
+    left: 0%;
+    padding: 25px;
+}
+.gender{
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    gap: 10px; 
+}
+label{
+    padding: 15px;
+}
+.email{
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    font-size: 20px;
+}
+.edit1{
+    padding: 10px;
+    position: relative;
+    top: 39%;
+    right: 75%;
+    color: blue;
+    font-size: small;
+}
+.address{
+    position: absolute;
+    top: 45%;
+    left:3%; 
+}
+.address input{
+    padding: 10%;
+    width: 30vh; 
+}
+.mobile{
+    position: absolute;
+    top: 65%;
+    left: 3%;
+    width: 30vh; 
+}
+.number{
+    position: absolute;
+    top: 60%;
+    left: 3%;
+    font-size: 20px;
+}
+.mobile input{
+    padding: 20px;
+}

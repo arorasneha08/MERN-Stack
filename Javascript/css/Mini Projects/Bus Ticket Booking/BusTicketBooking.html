@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking Form </title>
+</head>
+<body>
+    <center><h1>Bus Ticket Booking Form </h1></center>
+    <fieldset>
+        <legend style="text-align: center;">Passenger Details</legend>
+        <form>
+            <h2></h2>
+            <label for="name">First Name : </label>
+            <input type="text" id="name" name="name" placeholder="Enter your first Name" required>
+            <label for="name">Last Name : </label>
+            <input type="text" id="name" name="name" placeholder="Enter your last Name" required>
+            <br><br>
+            <label for="contact">Contact Number : </label>
+            <input type="number" placeholder="Enter your Phone number" required>
+            <br><br>
+            <label for="email">Email Address :</label>
+            <input type="email" placeholder="Enter your email address">
+            <br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="radio" id="gender">
+            <label for="gender">Male</label>
+            <input type="radio" name="radio" id="gender">
+            <label for="gender">Female</label>
+            <br><br>
+            <label for="date"> Journey Date : </label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+            <label for="origin">Arrival : </label>
+            <input type="text" id="origin" name="origin" placeholder="Enter your destination" required>
+            <br><br>
+            <label for="destination">Departure : </label>
+            <input type="text" id="destination" name="destination" placeholder="Enter your current address" required>
+            <br><br>
+            <label for="seats">Number of Seats : </label>
+            <input type="number" placeholder="Enter number of seats" required>
+            <br><br>
+            <label for="seat">Mode of Payment : </label>
+            <select id="seat" name="seat" required>
+                <option value="-Select-">-Select-</option>
+                <option value="cash">Cash</option>
+                <option value="upi">UPI</option>
+                <option value="creditcard">Credit Card</option>
+                <option value="debitcard">Debit Card</option>
+                <option value="netbanking">Netbanking</option>
+            </select>
+            <br><br>
+            <input type="checkbox" id="rules" required>
+            <label for="rules">I hereby declare that the particulars given are true and corect. I will abide by the rules & regulations of governing issue of Bus Passes .</label>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+</body>
+</html> 
+

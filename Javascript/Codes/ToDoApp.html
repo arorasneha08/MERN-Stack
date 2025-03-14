@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Simple DOM To-Do App</h1>
+        <input type="text" id="inputfield"/>
+        <button class="btn">click me !</button>
+        <div class="todoListsElem"></div>
+    </div>
+</body>
+<script>
+    let inputElement  = document.getElementById("inputfield");
+    let clickbtn = document.querySelector(".btn");
+    let todoElem = document.querySelector(".todoListsElem");
+
+    // on clicking the element is shown on the console 
+    const addToDo =()=>{
+        console.log(inputElement.value); 
+        let paraElem = document.createElement("p");
+        paraElem.textContent = inputElement.value ; 
+        console.log(paraElem); 
+        todoElem.append(paraElem); 
+    }
+    clickbtn.addEventListener("click", ()=>{
+        addToDo(); 
+    }); 
+
+    // click karne par element remove gaya
+    todoElem.addEventListener("click",()=>{
+        console.log(event.target); 
+        let currElem = event.target;
+        currElem.remove();
+    }); 
+</script>
+</html>

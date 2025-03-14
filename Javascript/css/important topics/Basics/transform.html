@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure it takes full viewport height for vertical centering */
+        }
+
+        img {
+            width: 300px; 
+            height: auto; 
+            transition: all 2s ease;
+        }
+        img:hover{
+            /* for right movement and -ve value for left movement */
+            /* transform: translateX(500px); */
+
+            /* for diagonal movement */
+            /* translate: 300px 400px; */
+
+            /* translate: 0 200px; */
+            /* doing the bottom movement */
+            /* transform: scale(2); */
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+
+            /* transform: rotate(90deg); */
+            /* transform: rotateX(90deg); */
+            /* transform: rotateY(90deg); */
+
+            /* transform: skewX(45deg); */
+            /* transform: skewY(45deg); */
+
+            /* rotate: 20deg; */
+
+            /* this propety is used to change the origin of the element , by default the image rotate at the center and now it will rotate with respect to left  */
+            /* transform-origin: left;
+            rotate: 180deg; */
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="">
+    </div>
+</body>
+</html>

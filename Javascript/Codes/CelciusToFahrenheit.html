@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(243, 243, 243);
+        }
+
+        .container {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: rgb(52, 152, 219);
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: rgb(52, 152, 219);
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <input id="celsius" type="number" placeholder="Enter Celsius temperature" step="1">
+        <button id="convert-btn" onclick="convertTemperature()">Convert</button>
+        <p id="result" class="result"></p>
+      </div>
+      
+</body>
+<script>
+    const convertBtn = document.getElementById('convert-btn');
+    const celsiusInput = document.getElementById('celsius');
+    const resultElement = document.getElementById('result');
+
+    function convertTemperature() {
+        const celsius = parseFloat(celsiusInput.value);
+        const fahrenheit = (celsius * 9 / 5) + 32;
+        const roundedFahrenheit = fahrenheit.toFixed(2);
+        resultElement.textContent = `Fahrenheit: ${roundedFahrenheit}`;
+    }
+</script>
+
+</html>

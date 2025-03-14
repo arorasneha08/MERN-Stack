@@ -1,0 +1,45 @@
+<!-- using the concept of async await -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Dad Jokes</h1>
+        <section class="api_body"></section>
+        <button id="fetchJoke">Get Another Joke</button>
+    </div>
+
+    <script>
+        const apiBody = document.querySelector(".api_body");
+        const apiUrl = "https://icanhazdadjoke.com/";
+
+        // async function fetchData() {
+        const fetchData = async()=>{   // asynchronous fat arrow function 
+            try {
+                const response = await fetch(apiUrl, {
+                    headers: {
+                        Accept: "Application/json",
+                    },
+                });
+                const data = await response.json();
+                console.log(data.joke);
+                apiBody.innerHTML = data.joke;
+            }
+            catch(error){
+                apiBody.innerHTML = error;
+                console.log(error);
+            }
+        }
+        fetchData();
+        document.getElementById("fetchJoke").addEventListener("click", fetchData);
+
+    </script>
+</body>
+
+</html>

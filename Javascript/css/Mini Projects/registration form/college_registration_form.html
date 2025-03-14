@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form </title>
+    <style>
+        *{
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;"> REGISTRATION FORM </h1>
+    <h4 >Kindly fill your details correctly. </h4>
+    <h3 style="text-align: left;"> Personal Details </h3>
+    <form>
+        <table style="text-align: left;">
+            <tr>
+                <td> First Name : </td>
+                <td>
+                    <input type="text" placeholder="Enter your first name" >
+                </td>
+            </tr>
+            <tr>
+                <td>Middle Name : </td>
+                <td>
+                    <input type="text" placeholder="Enter your Middle name">
+                </td>
+            </tr>
+            <tr>
+                <td>Last Name : </td>
+                <td>
+                    <input type="text" placeholder="Enter your Last name">
+                </td>
+            </tr>
+            <tr>
+                <td>Father Name : </td>
+                <td>
+                    <input type="text" placeholder="Enter your Father name">
+                </td>
+            </tr>
+            <tr>
+                <td>Mother Name : </td>
+                <td>
+                    <input type="text" placeholder="Enter your Mother name">
+                </td>
+            </tr>
+            <tr>
+                <td>Date Of Birth : </td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <td>Email ID : </td>
+                <td>
+                    <input type="email" placeholder="Enter your email ID ">
+                </td>
+            </tr>
+            <tr>
+                <td>Contact Number : </td>
+                <td>
+                    <input type="tel" placeholder="Enter your Contact Number">
+                </td>
+            </tr>
+            <tr>
+                <td>Gender : </td>
+                <td>
+                    <input type="radio" id="html" name="Gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="html" name="Gender" value="Female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td> Permanent Address : </td>
+                <td>
+                    <textarea name="explain" cols="22" rows="5" placeholder="Enter your Address" height="227.2" width="109.2"></textarea>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <h3 style="text-align: left;">Father Details </h3>
+            <tr>
+                <td>Father Name : </td>
+                <td>
+                    <input type="text" placeholder="Enter your Father name">
+                </td>
+            </tr>
+            <tr>
+                <td>Contact Number : </td>
+                <td>
+                    <input type="tel" placeholder="Enter Father's Contact Number">
+                </td>
+            </tr>
+            <tr>
+                <td>Email ID : </td>
+                <td>
+                    <input type="email" placeholder="Enter Father's email ID ">
+                </td>
+            </tr>
+            <tr>
+                <td>Occupation</td>
+                <td>
+                    <input type="text" placeholder="Enter your occupation">
+                </td>
+            </tr>
+            <tr>
+                <td> Residential Address : </td>
+                <td>
+                    <textarea name="explain" cols="22" rows="5" placeholder="Enter your Address" height="227.2" width="109.2"></textarea>
+                </td>
+            </tr>
+            <table>
+                <h3 style="text-align: left;">Mother Details </h3>
+                <tr>
+                    <td>Mother Name : </td>
+                    <td>
+                        <input type="text" placeholder="Enter your Mother name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Contact Number : </td>
+                    <td>
+                        <input type="tel" placeholder="Enter Mother's Contact Number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email ID : </td>
+                    <td>
+                        <input type="email" placeholder="Enter Mother's email ID ">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Occupation</td>
+                    <td>
+                        <input type="text" placeholder="Enter your occupation">
+                    </td>
+                </tr>
+                <tr>
+                    <td> Residential Address : </td>
+                    <td>
+                        <textarea name="explain" cols="22" rows="5" placeholder="Enter your Address" height="227.2" width="109.2"></textarea>
+                    </td>
+                </tr>
+
+        </table>
+        <h3 style="text-align: left;">Course Details </h3>
+        <table>
+            <tr>
+                <td>Course name : </td>
+                <td>
+                    <select name="course" id="coursename">
+                        <option>Select your Course</option>
+                        <option>PHD</option>
+                        <option>MSC</option>
+                        <option>BCA</option>
+                        <option>BE</option>
+                        <option>Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Branch : </td>
+                <td>
+                    <input id="course" list="branches" placeholder="Choose your Branch"/>
+                    <datalist id="branches">
+                        <option>Computer Science Engineering</option>
+                        <option>Mechanical Engineering </option>
+                        <option>Civil Engineering</option>
+                        <option>Biotechnology Engineering</option>
+                        <option>Electrical Engineering</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>10th class score : </td>
+                <td>
+                    <input type="number" placeholder="Enter your marks ">
+                </td>
+            </tr>
+            <tr>
+                <td>12th class score : </td>
+                <td>
+                    <input type="number" placeholder="Enter your marks">
+                </td>
+            </tr>
+            <tr>
+                <td>Jee Main percentile :</td>
+                <td>
+                    <input type="text" placeholder="Enter your Jee Main Score">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <h3 style="text-align: left;">Transportation details </h3>
+        <table >
+            <tr>
+                <td>Do you need Transportation facility ?<td style="color: red;">*</td></td>
+                <td>
+                    <input type="radio" id="transport" name="transport">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="transport" name="transport">
+                    <label for="no">No</label>
+                </td>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <input type="button" name="submit" value="Submit" style="text-align: center; ">
+</body>
+</html>

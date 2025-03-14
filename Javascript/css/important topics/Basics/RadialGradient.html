@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            width: 100%;
+            height: 100vh;
+            background-image: radial-gradient(circle, red, yellow , green);
+            background-image: radial-gradient(ellipse, red 20%, yellow 40%, green 30%);
+
+            /* Reapeating radial gradient  */
+            /* by defining how much each color must expand to  */
+            background-image: repeating-radial-gradient(circle ,orange 0%,  orange 30px, green 30px,green 60px, blue 60px , blue 90px);
+            /* let it do itself  */
+            background-image: repeating-radial-gradient(circle , orange 30px,green 60px, blue 90px  45px);
+        }
+    </style>
+</head>
+<body>
+    <section></section>
+</body>
+</html>

@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 9vh;
+    background-color: whitesmoke; 
+    color: black;
+    position: fixed;
+    z-index: 1;
+}
+body{
+    height: 1000vh;
+}
+section{
+    border: 2px solid black;
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    top: 0;
+}
+.left{
+    width: 20%;
+    height: 80vh;
+    border: 2px solid green;
+    position: fixed; 
+    top: 15vh;
+    left: 0;
+    overflow: scroll; 
+    background-color:whitesmoke;  
+}
+.right{
+    width: 70%;
+    height: 80vh;
+    border: 2px solid black; 
+    position :absolute; 
+    top: 14.8vh;
+    left: 20%;
+    background-color: whitesmoke;
+}
+/* navbar 1  */
+.img{
+    height: 60px;
+    width: 60px;
+    margin-left: 8px;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar{
+    display: flex;
+}
+.nav-content{
+    display: inline; 
+}
+.tutorial li{
+    list-style: none;
+    align-content:space-evenly; 
+    padding: 17px;
+    padding-left: 20px;
+}
+.search-bar{
+    align-content: space-evenly;
+    padding: 10px;
+    width: 30%;
+    display: flex;
+}
+.search-bar input{
+    padding: 10px 40px 10px 10px;
+    width: 90%;
+    border-radius: 25px;
+    font-size: 15px;
+    text-align:justify; 
+    outline: none;
+    border: 1px solid black;
+    font-style: italic;
+    
+}
+.search-bar .fa-magnifying-glass{
+    position: absolute;
+    right: 20%; 
+    top: 12px;
+    color: black; 
+}
+.input-container{
+    position: relative;
+    width: 40%;
+}
+.fa-circle-half-stroke{
+    position: relative; 
+    top: 30%;
+}
+.spaces{
+    list-style: none;
+    position: relative;
+    top: 5px;
+}
+.spaces li{
+    display: flex;
+    align-items:center; 
+    padding: 10px;
+}
+.plus-content{
+    display: flex;
+}
+svg{
+    margin-right :12px; ;
+}
+.user-buttons{
+    border-radius: 25px;
+    width: 20vh;
+    position: relative;
+    top: 5px;
+    display: flex;
+    margin-left: 5px;
+    height: 45px;
+}
+.login{
+    border-radius: 25px;
+    background-color: #04aa6d;
+    width: 16vh; 
+    margin-right: -25px;
+    outline: none;
+    border: none;
+    z-index: 5;
+    color: #fff;
+}
+.signup{
+
+    background-color: #d9eee1; 
+    border-radius: 25px;
+    width: 16vh; 
+    outline: none;
+    border: none;
+}
+/* nav 2 */
+.nav2{
+    background-color: black;
+    width: 100%;
+    height: 6.8vh;
+}
+.nav2-ul{
+    display: flex;
+    color: white;
+}
+.nav2-ul li {
+    list-style: none;
+    padding: 17px;
+}
+#color{
+    background-color: #04aa6d; 
+    height:50px; 
+}
+.css{
+    font-size: 20px;
+    height: 5vh;
+    width: 100%;
+    text-align: center;
+    padding: 10px ;
+}
+.topics{
+    padding: 10px;
+    list-style: none;
+    width: 100%;
+}
+.topics li{
+    padding: 10px;
+    border: 1px solid black;
+    align-content:flex-start;
+    padding-left: 25%;
+    background-color:#04aa6d; 
+    color: white;
+}
+
+.css-tutorial{
+    position: absolute;
+    top: 15%;
+    font-size: 42px;
+    font-weight: 400;
+    padding-left: 15px;
+}
+.buttons{
+    position: absolute; 
+    top: 25%;
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    color: white;
+}
+.home{
+    background-color: #04aa6d;
+    padding: 20px ; 
+    border-radius: 5px;
+    font-weight: 600;
+}
+.next{
+    left: 800px;
+    position: relative;
+    align-items: flex-end;
+    background-color: #04aa6d;
+    padding: 20px;
+    top: -15px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.fa-angle-right{
+    padding-left: 10px;
+    padding: 5px;
+}
+.content{
+    position: relative; 
+    top: 45%;
+    background-color: #d9eee1; 
+    height: 40vh;
+    padding: 20px;
+}
+.content div{
+    padding: 15px;
+    font-weight: 500;
+}
+.start{
+    background-color: #04aa6d;
+    color: white;
+    width: 25%;
+    border-radius: 10px;
+    display: flex;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+    top: 0px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+.right-angle{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.tutorial li:hover{
+    background-color:#04aa6d;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.left li:hover{
+    background-color: black; 
+    /* opacity: 0.6;  */
+    cursor: pointer;
+}
+.next,.signup,.login,.start,.home,.plus, .fa-magnifying-glass, .nav2 li:hover{
+    cursor: pointer;
+}

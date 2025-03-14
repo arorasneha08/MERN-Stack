@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  .dropdown{
+    display: inline-block;
+    position: relative;
+  }
+  .dropbtn{
+    background-color: green;
+    color: azure;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 2px;
+    padding: 20px;
+  }
+  .dropdowncontent{
+    display: none;
+    position: absolute;
+    box-shadow: 0px 15px 15px 0px lightcyan;
+    z-index: 1;
+    padding: 20px;
+  }
+  .dropdown:hover .dropdowncontent{
+    display: block;
+  }
+  .dropdowncontent a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    width: initial;
+  }
+  .dropdowncontent a:hover{
+    background-color: aquamarine;
+  }
+
+</style>
+</head>
+<body>
+  <div class="dropdown">
+    <p class="dropbtn">Dropdown Menu</p>
+    <div class="dropdowncontent">
+      <a href="#">Link 1 </a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .transition1{
+        height: 200px;
+        width: 200px;
+        background-color: black;
+    }
+    .transition2{
+        border-radius: 50%;
+    }
+</style>
+<body>
+    <section>
+        <div class="shape" draggable="true"></div> <!-- Make shape draggable -->
+        <button id="mybtn">Click Me!</button>
+    </section>
+
+    <script>
+        let shapes = document.querySelector(".shape");
+        let btn = document.getElementById("mybtn"); 
+
+        const handleMouseEvents = ()=>{
+            shapes.classList.add("transition1");
+        }
+        const handleMouseEvents2 = ()=>{
+            shapes.classList.add("transition2"); 
+        }
+        const handleMouseEvents3 = ()=>{
+            shapes.classList.add("transition3"); 
+        }
+
+        btn.addEventListener("click", handleMouseEvents); 
+        btn.addEventListener("dblclick", handleMouseEvents2);
+
+    </script>
+</body>
+</html>

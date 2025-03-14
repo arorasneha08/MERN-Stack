@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button id="addBtn">add data to local storage</button>
+        <button id="getBtn">Get data from local storage</button>
+        <button id="removeBtn">Delete data from local storage</button>
+    </div>
+</body>
+<script>
+    const studentBioData = {
+        firstName : "vinod", 
+        lastName : "thapa", 
+        age : 20 , 
+        gender: "male", 
+        grade :"A" , 
+        courses : ["math", "science" , "english"], 
+        address:{
+            street : "124 Main ST" , 
+            city : "citiwille", 
+            state : "State", 
+            zipCode : "12345", 
+        },
+    };
+
+    const addToDoList = () =>{
+        localStorage.setItem("object data" , studentBioData); // object object
+        // because the above data is not string and we can only store string in the localstorage 
+        localStorage.setItem("object data" , JSON.stringify(studentBioData));
+    };
+    const getToDoList = () =>{
+        const retrievedStudentData = JSON.parse(localStorage.getItem("object data")); 
+        // needed to convert it from string to its actual data form so used json.parse 
+        console.log("Retrieved from the local storage : ",typeof retrievedStudentData);
+    }
+    const removeToDoList = () =>{
+        const removeData = localStorage.removeItem("object data");
+        console.log("Deleted data : ", typeof removeData); 
+    }
+    document.getElementById("addBtn").addEventListener("click", ()=>{
+        addToDoList(); 
+    });
+    document.getElementById("getBtn").addEventListener("click", ()=>{
+        getToDoList(); 
+    });
+    document.getElementById("removeBtn").addEventListener("click", ()=>{
+        removeToDoList(); 
+    }); 
+</script>
+</html>

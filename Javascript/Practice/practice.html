@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height:61vh;
+        width: 55vh;
+    }
+    *{
+        background-color: black;
+        color: white;
+        margin: auto;
+        text-align: center;
+        list-style: none;
+    }
+    .fav{
+        font-size: larger;
+        color: yellow;
+        font-style:normal;
+        padding-top: 10px;
+        /* text-align: center; */
+    }
+    li{
+        color: aquamarine;
+        padding: 8px;
+    }
+    li:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+    #favourite{
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+        background-color: antiquewhite;
+        color: black;
+        margin-top: 90px;
+    }
+</style>
+<body>
+    <p class="fav">What is your favourite fruit ?</p>
+    <ul class="fruits">
+        <li>Mango</li>
+        <li>grapes</li>
+        <li>banana</li>
+        <li>litchi</li>
+        <li>cherry</li>
+    </ul>
+    <p id="favourite"></p>
+</body>
+<script>
+    let f = document.getElementById("favourite");  
+    document.querySelector(".fruits").addEventListener("click" , (event)=>{
+        // console.log(event.target.innerHTML);
+        
+        f.innerHTML = `Favourite fruit : ${event.target.textContent}`; 
+    })
+</script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="heading">DOM API</h1>
+        <ul class="list-of--nodes">
+            <li>1 node</li>
+            <li>2 node</li>
+            <li>3 node</li>
+            <li>4 node</li>
+            <li style="display: none;">5 node</li>
+        </ul>
+    </div>
+</body>
+<script>
+    let findElementById = document.getElementById("heading");
+    console.log(findElementById); // <h1 id="heading">
+    console.log(findElementById.innerHTML); // DOM API
+    console.log(findElementById.innerText); // DOM API
+    console.log(findElementById.textContent); //DOM API
+
+    let findElementByclassName = document.getElementsByClassName("list-of--node");
+    console.log(findElementByclassName); // HTMLCollection { length: 0 }
+
+    for(let elem of findElementByclassName){
+        console.log(elem.innerHTML); // will get the whole HTML code
+        console.log(elem.innerText); // will get the nodes from 1 to 4 
+        console.log(elem.textContent); // will get the nodes from 1 to 5 
+        // because textcontent property ignores the CSS properties set to it 
+    }
+    const getElementsByTagName = document.getElementsByTagName("li");
+    for(let name of getElementsByTagName){
+        console.log(name); 
+    }
+
+    const getElementsByquerySelector = document.querySelector("#heading");
+    console.log(getElementsByquerySelector) ; // heading
+    console.log(getElementsByquerySelector.innerHTML = "sneha arora") ; 
+
+    const findElementByQuerySelectorAll = document.querySelectorAll("li");
+    console.log(findElementByQuerySelectorAll);// NodeList(5) [ li, li, li, li, li ]
+
+    findElementByQuerySelectorAll.forEach((currElem)=>{
+        console.log(currElem); 
+    })
+
+    
+</script>
+</html>

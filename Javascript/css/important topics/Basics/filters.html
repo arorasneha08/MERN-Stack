@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div {
+            display: grid;
+            place-items: center;
+            border: 2px solid black;
+            height: 500px;
+            width: 500px;
+            margin: 0px auto;
+        }
+        .img1{
+            /* turns the image to black and white  */
+            filter: grayscale();
+        }
+        .img2 img{
+            filter: blur(10px);
+        }
+        .img3 img{
+            filter: brightness(20%); 
+            /* decrease brightness below 100% */
+            filter: brightness(130%);
+            /* increase brightness  */
+        }
+        .img4 img{
+            filter: contrast(20%);
+            filter: contrast(200%);
+        }
+        .img5 img{
+            filter: saturate(20%);
+            filter: saturate(200%);
+        }
+        .img6 img{
+            filter: invert();
+        }
+        .img6 img{
+            filter: opacity(0.5);
+            filter: opacity(0.7);
+        }
+        .img7 img{
+            filter: blur(3px) grayscale(0.5) contrast(1.2) ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="img1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJ-d07MI21CJ3wGgK-NYhpZlnrzeZWGJ3HA&s" alt="">
+
+    </div>
+    <div class="img2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQIM57KDHyxTdRFhpTOqqe4SVeoMYoL2miww&s" alt="">
+    </div>
+    <div class="img3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQIM57KDHyxTdRFhpTOqqe4SVeoMYoL2miww&s" alt="">
+    </div>
+    <div class="img4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQIM57KDHyxTdRFhpTOqqe4SVeoMYoL2miww&s" alt="">
+    </div>
+    <div class="img5">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuvShv_o-o9RN0x5IRfXWxE_W7sxXjDL-F1w&s" alt="">
+    </div>
+    <div class="img6">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuvShv_o-o9RN0x5IRfXWxE_W7sxXjDL-F1w&s" alt="">
+    </div>
+    <div class="img7">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuvShv_o-o9RN0x5IRfXWxE_W7sxXjDL-F1w&s" alt="">
+    </div>
+
+</body>
+</html>

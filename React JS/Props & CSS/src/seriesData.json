@@ -1,0 +1,53 @@
+[
+    {
+      "name": "Lovely Runner",
+      "id": "lovely-runner",
+      "img_url": "family1.jpg",
+      "rating": "9.8",
+      "description": "Im Sol travels back in time to prevent the tragic fate of her favorite star, Ryu Sun Jae.",
+      "cast": ["Kim Hye Yoon", "Byeon Woo Seok", "Song Geon Hee"],
+      "genre": ["Romantic Comedy", "Fantasy"],
+      "watch_url": "https://www.viki.com/tv/40466c-lovely-runner"
+    },
+    {
+      "name": "Stranger Things",
+      "id": "stranger-things",
+      "img_url": "family2.jpg",
+      "rating": "8.7",
+      "description": "A group of young friends witness supernatural forces and secret government experiments in their small town.",
+      "cast": ["Millie Bobby Brown", "Finn Wolfhard", "David Harbour"],
+      "genre": ["Horror", "Sci-Fi", "Thriller"],
+      "watch_url": "https://www.netflix.com/title/80057281"
+    },
+    {
+      "name": "The Crown",
+      "id": "the-crown",
+      "img_url": "family3.avif",
+      "rating": "8.6",
+      "description": "Follows the reign of Queen Elizabeth II as she navigates political and personal challenges.",
+      "cast": ["Claire Foy", "Matt Smith", "Olivia Colman"],
+      "genre": ["Drama", "Historical"],
+      "watch_url": "https://www.netflix.com/title/80025678"
+    },
+    {
+      "name": "Breaking Bad",
+      "id": "breaking-bad",
+      "img_url": "netflix1.jpg",
+      "rating": "9.5",
+      "description": "A high school chemistry teacher turned methamphetamine manufacturer partners with a former student to dominate the drug trade.",
+      "cast": ["Bryan Cranston", "Aaron Paul", "Anna Gunn"],
+      "genre": ["Crime", "Drama", "Thriller"],
+      "watch_url": "https://www.netflix.com/title/70143836"
+    },
+    {
+      "name": "Money Heist",
+      "id": "money-heist",
+      "img_url": "netflix2.jpg",
+      "rating": "8.3",
+      "description": "A criminal mastermind known as 'The Professor' plans the biggest heist in recorded history.",
+      "cast": ["Álvaro Morte", "Úrsula Corberó", "Itziar Ituño"],
+      "genre": ["Crime", "Drama", "Action"],
+      "watch_url": "https://www.netflix.com/title/80192098"
+    }
+  ]
+  

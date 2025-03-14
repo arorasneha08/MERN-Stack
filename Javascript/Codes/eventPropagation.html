@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div id="outer">outer
+            <div id="middle">Middle
+                <div id="inner">Inner</div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const callOuter = (event) => {
+            console.table([
+                {
+                    Description: "I am outer one",
+                    Target: event.target,
+                    currentTarget: event.currentTarget,
+                },
+            ]);
+        };
+        const callMiddle = (event) =>{
+            console.table([
+                {
+                    Description : "I am Middle",
+                    target : event.target,
+                    currentTarget : event.currentTarget, 
+                },
+            ]);
+            event.stopPropagation(); // this is used because whenever we click on middle it first print the outer box and then the middle box so , to get the only clicked event use this 
+        };
+        const callInner = (event) =>{
+            console.table([
+                {
+                    Description : "I am Inner",
+                    target : event.target,
+                    currentTarget : event.currentTarget, 
+                },
+            ]);
+            // event.stopPropagation(); 
+
+        };
+        document.getElementById("outer").addEventListener("click", callOuter); 
+        document.getElementById("middle").addEventListener("click", callMiddle); 
+        document.getElementById("inner").addEventListener("click", callInner, true); //adding true will change the flow of the way in which the the tables get printed . First , it will show the inner , middle and then the outer 
+        
+    </script>
+</body>
+
+</html>

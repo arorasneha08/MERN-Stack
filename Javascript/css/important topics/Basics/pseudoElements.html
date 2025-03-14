@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .hero-content h1::before{
+            /* content: "thapa technical "; */
+            content: "\f007";
+
+            /* adding icoms dynamically   */
+            font-family: "font awesome 6 free";
+        }
+        .hero-content h1::after{
+            content: " thapa technical ";
+        }
+        .hero-content p::first-letter{
+            font-size: 50px;
+        }
+        .hero-content p::first-line{
+            text-decoration: underline;
+        }
+        .hero-content p::selection{
+            background-color: aquamarine;
+        }
+        input::placeholder{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter name">
+    <section class="hero-section">
+        <div class="container">
+            <div class="grid grid-two-column">
+                <div class="hero-content">
+                    <h1>Best CSS Course</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, placeat! Saepe ut, quisquam aliquid voluptate doloremque, voluptatibus aperiam natus consequuntur mollitia ipsum necessitatibus maiores quod obcaecati nam ea. Consequuntur assumenda quas omnis, similique iure illum facilis, saepe earum expedita accusamus numquam, magnam aut. Sit vero, minima nostrum ex eos minus?</p>
+                    <a href="www.google.com">Listen Now</a>
+                </div>
+                <div class="hero-image">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

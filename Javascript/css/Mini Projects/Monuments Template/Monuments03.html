@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .outer-box{
+            border: 2px solid saddlebrown;
+            background-color: rgb(249, 245, 198);
+            padding: 20px;
+            width: 700px;
+            margin: auto;
+        }
+        img{
+            border: 2px solid black;
+            margin: 10px;
+            height: 200px;
+        }
+        h1{
+            text-align: center;
+        }
+        .box{
+            border: 2px solid saddlebrown;
+            overflow: hidden;
+            background-color: rgb(249, 245, 198);
+        }
+        .box:nth-of-type(odd) img {
+            float: left;
+            margin-right: 20px;
+        }
+        .box:nth-of-type(even) img {
+            float: right;
+            margin-left: 20px;
+        }
+        p{
+            text-align: center;
+            justify-content: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        <h1>Monuments</h1>
+        <div class="box">
+            <img src="tajmahal.webp" alt="" height="200px" width="300px" id="img1">
+            <p id="para1">Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India. It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahanto house the tomb of his beloved wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The tomb is the centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.</p>
+        </div>
+        <div class="box">
+            <img src="chichenItza.webp" alt=""height="200px" id="img2">
+            <p id="para2">Chichén Itzá is a complex of Mayan ruins on Mexico's Yucatán Peninsula. A massive step pyramid, known as El Castillo or Temple of Kukulcan, dominates the ancient city, which thrived from around 600 A.D. to the 1200s. Graphic stone carvings survive at structures like the ball court, Temple of the Warriors and the Wall of the Skulls. Nightly sound-and-light shows illuminate the buildings' sophisticated geometry.</p>
+        </div>
+        <div class="box">
+            <img src="colessum.webp" alt=""height="200px" id="img3">
+            <p id="para3">The Colosseum is an elliptical amphitheatre in the centre of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient amphitheatre ever built, and is still the largest standing amphitheatre in the world, despite its age.</p>
+        </div>
+        <div class="box">
+            <img src="machupichu.jpg" alt=""height="200px" id="img4">
+            <p id="para4">Machu Picchu is an Incan citadel set high in the Andes Mountains in Peru, above the Urubamba River valley. Built in the 15th century and later abandoned, it’s renowned for its sophisticated dry-stone walls that fuse huge blocks without the use of mortar, intriguing buildings that play on astronomical alignments and panoramic views. Its exact former use remains a mystery. </p>
+        </div>
+        <div class="box">
+            <img src="petra.webp" alt=""height="200px" id="img5">
+            <p id="para5">Petra is a famous archaeological site in Jordan's southwestern desert. Dating to around 300 B.C., it was the capital of the Nabatean Kingdom. Accessed via a narrow canyon called Al Siq, it contains tombs and temples carved into pink sandstone cliffs, earning its nickname, the "Rose City." Perhaps its most famous structure is 45m-high Al Khazneh, a temple with an ornate, Greek-style facade, and known as The Treasury</p>
+        </div>
+        <div class="box">
+            <img src="the-great-wall-of-china.jpg" alt=""height="200px" id="img6">
+            <p id="para6">The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe.</p>
+        </div>
+        <div class="box">
+            <img src="statue-Christ-the-Redeemer-Rio-de-Janeiro.webp" alt=""height="200px" id="img7">
+            <p id="para7">Christ the Redeemer is an Art Deco statue of Jesus Christ in Rio de Janeiro, Brazil, created by French-Polish sculptor Paul Landowski and built by Brazilian engineer Heitor da Silva Costa, in collaboration with French engineer Albert Caquot. Romanian sculptor Gheorghe Leonida sculpted the face.</p>
+        </div>
+        
+    </div>
+</body>
+</html>

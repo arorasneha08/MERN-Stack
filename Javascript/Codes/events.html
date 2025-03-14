@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <!-- inline events -->
+    <h1>Inline event</h1>
+    <button onclick="alert('welcome')">greetings</button>
+    <button ondblclick="alert('welcome to js course')">greetings again</button>
+    <button onmouseover="alert('welcome to js course')">greetings again</button>
+
+    <!-- dom events  -->
+    <h1>Dom Event Handler</h1>
+    <button id="mybutton">greetings</button>
+    <button id="mybutton1">greetings</button>
+
+    <!-- add event listener  -->
+     <h1>add event listener </h1>
+    <button id="mybutton2">greetings</button>
+    <button id="mybutton3">greetings</button>
+
+</body>
+<script>
+    // for first button : Dom event handler 
+    document.getElementById('mybutton').onclick =()=>{
+        alert("hello"); 
+    }; 
+
+    document.getElementById('mybutton1').onmouseover=()=>{
+        alert("hello again"); 
+    }; 
+
+    // add event listener
+    // method 1 
+    document.getElementById('mybutton2').addEventListener("click" , function(){
+        alert("hello"); 
+    }) ; 
+    // method 2 
+    document.getElementById('mybutton2').addEventListener("click" , ()=>{
+        alert("hello"); 
+    }) ; 
+
+    document.getElementById('mybutton3').addEventListener("mouseover" , ()=>{
+        alert("hello"); 
+    }) ; 
+    
+</script>
+</html>

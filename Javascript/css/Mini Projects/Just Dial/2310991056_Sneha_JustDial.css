@@ -1,0 +1,178 @@
+.container{
+    border: 2px solid black;
+    height: 110vh;
+    width: 70%;
+    margin: auto;
+    margin-top: 2%; 
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.img1{
+    border-top: 1px solid black; 
+    border-bottom: 1px solid black; 
+    height: 25vh;
+    width: 25%;
+}
+img{
+    padding: 15px;
+}
+.box1{
+    display: flex;
+}
+h1{
+    padding: 10px;
+}
+.content1{
+    border-top: 1px solid black; 
+    border-bottom: 1px solid black; 
+    height: 25vh;
+    width: 75%;
+}
+.name {
+    font-size: 25px; 
+    padding: 10px;
+}
+.fa-thumbs-up{
+    padding-right: 10px;
+}
+.fa-star{
+    padding: 2px;
+}
+.stars{
+    padding-left: 5px;
+}
+.stars span{
+    font-weight: 600;
+}
+.location{
+    padding: 10px;
+}
+.fa-location-dot{
+    padding: 1px;
+}
+.available{
+    padding-left: 3px;
+    margin-left: 4px;
+}
+#ava{
+    padding-left: 10px;
+}
+.contact{
+    padding: 7px;
+}
+.fa-phone , .fa-whatsapp{
+    padding-right: 3px;
+}
+button{
+    padding: 8px;
+    outline: 1px solid black; 
+    color: white;
+    border-radius: 10px;
+}
+#b1{
+    background-color: #058a07; 
+}
+#b2{
+    margin-left: 5px;
+    background-color: #0076d7; 
+}
+#b3{
+    background-color: white;
+    color: black;
+    margin-left: 5px;
+}
+.box2{
+    display: flex;
+    margin-top: 2%;
+}
+.box3{
+    display: flex;
+    margin-top: 2%;
+}
+.box4{
+    display: flex;
+    margin-top: 2%;
+}
+.container1{
+    height: 60px;
+    border: 2px solid black;
+    display: flex;
+}
+.img2{
+    height: 60px;
+    width: 10%;
+}
+.location1{
+    height: 57px; 
+    width: 300px;
+}
+.location1 select {
+    padding:10px;
+    margin-top: 10px;
+    width: 80%;
+}
+#location{
+    position: relative;
+    left: 10%;
+}
+.search{
+    padding: 9px;
+    width: 90%;
+    margin-left: 5px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+.search-bar{
+    width: 30%;
+    display: flex;
+}
+.fa-xmark{
+    position: relative;
+    top: 20px;
+    right: 80px;
+}
+.fa-magnifying-glass{
+    position: relative;
+    top: 20px;
+    right: 70px;
+}
+.fa-microphone{
+    position: relative;
+    top: 20px;
+    right: 60px;
+}
+.fa-thumbs-up{
+    color: #157dd1;
+}
+#star{
+    color: goldenrod;
+}
+.items ul{
+    display: flex;
+    width: 140%;
+}
+.items ul li{
+    list-style: none;
+    padding: 10px;
+    padding-left: 30px;
+    width: 20%;
+    margin-top: 10px;
+}
+.btn{
+    position: absolute;
+    top: 15px;
+    right: 37px;
+    color: black;
+}
+.fa-language , .fa-volume-high,  .fa-volume-low{
+    padding-right: 5px;
+}
+.fa-bell{
+    position: absolute;
+    top: 25px;
+}
+select{
+    text-align: center;
+}

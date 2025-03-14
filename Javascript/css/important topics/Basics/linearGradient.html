@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(red, yellow);
+            /* default :- top to bottom  */
+            background-image: linear-gradient(to right, red, yellow);
+            background-image: linear-gradient(to left, red, yellow);
+            background-image: linear-gradient(to top, red, yellow);
+            /* for diagonal to bottom right */
+            background-image: linear-gradient(to bottom right, red, yellow);
+            background-image: linear-gradient(to top left, red, yellow);
+
+            /* for repeating color gradients  */
+            background-image: repeating-linear-gradient(to right, blue, green 45px);
+            background-image: repeating-linear-gradient(to top right, rgb(96, 96, 247), rgb(83, 231, 83) 45px);
+        }
+        
+        /* adding a bg image to the linear gradient */
+        div {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(to top, rgba(69, 69, 246, 0.6), pink, rgba(251, 58, 58, 0.6)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDNiSZKNwq10mAPszqi_52m-AVsj0m2zji7GgS6FEAsLZtdY13r5YFJBeZJEodFLSZ-dE&usqp=CAU");
+            background-size: contain;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section></section>
+    <div></div>
+    
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            border-inline: 2px solid red;
+            /* for left right */
+            border-block: 2px solid green;
+            /* for top bottom */
+        }
+
+        /* css nesting  */
+        .container{
+            /* for taking reference of the childern easily */
+            & p{
+                text-align: center;
+                font-size: 40px;
+                background-color: red;
+                &::before{
+                    content: "*";
+                }
+            }
+        }
+
+        #div{
+            font-size: 30px;
+            background-color: violet;
+            /*  */
+            writing-mode: vertical-lr;
+        }
+
+        .container:has([type="checkbox"]:checked) label{
+            color: blue;
+        }
+        input[type="checkbox"]{
+            accent-color: red;
+            aspect-ratio: 1;
+        }
+        .class{
+            height: 100px;
+            width: auto;
+            /* used for creating shapes  */
+            clip-path: polygon(0% 0%, 0% 100% , 100% 100%);
+            background-color: red;
+        }
+        img{
+            width: 30%;
+            border-radius: 10px;
+            clip-path: polygon(20% 0%, 80% 0% , 100% 20% , 100% 80% , 80% 100% , 20% 100% );
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Best CSS Course Ever</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius expedita rem, non, doloribus velit nemo quas saepe dolore aspernatur veritatis temporibus totam! Placeat et excepturi, dolores ullam mollitia magni cum Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ut fugiat. Quis nesciunt eius assumenda dolorum quidem perferendis obcaecati ipsa?Lorem ipsum dolor sit amet consectetur, adipisicing elit. In expedita non eligendi totam, excepturi voluptate. Quidem libero fugiat sequi modi, nulla numquam amet quasi minima earum cumque harum voluptas recusandae.</p>
+
+        <div id="div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, assumenda atque quasi vitae iste beatae qui molestias cum eaque reiciendis.</div>
+        <input type="checkbox">
+        <label for="">Yes</label>
+        <div class="class"></div>
+        <img src="https://fps.cdnpk.net/images/home/subhome-ai.webp?w=649&h=649" alt="">
+    </div>
+</body>
+</html>

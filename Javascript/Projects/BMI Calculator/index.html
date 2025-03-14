@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<style>
+    #bmiCalculator {
+        margin: auto;
+        width: 300px;
+        padding: 20px;
+        border: 1px solid black;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    input {
+        width: 90%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        background-color: green;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: red;
+    }
+
+    #result {
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+    <div id="bmiCalculator">
+        <h2>
+            BMI Calculator
+        </h2>
+        <div class="weight-input">
+            <label for="weight">weight (kg):</label>
+            <input type="number" id="weight" placeholder="weight in kilograms">
+        </div>
+        <div class="height-input">
+            <label for="height">height (cm):</label>
+            <input type="number" id="height" placeholder="height in centimeters">
+        </div>
+        <button onclick="calculateBMI()" id="button">
+            Calculate BMI
+        </button>
+        <div id="result">
+
+        </div>
+    </div>
+
+    <script>
+        let weight = document.getElementById("weight");
+        let height = document.getElementById("height");
+        let btn = document.getElementById("button");
+        let res = document.getElementById("result");
+
+        function calculateBMI() {
+            let w = parseFloat(weight.value);
+            let h = parseFloat(height.value);
+            let BMI = w / Math.pow((h / 100), 2);
+            let BMIResult = BMI.toFixed(2);
+            res.textContent = `${BMIResult}`
+        }
+    </script>
+</body>
+
+</html>

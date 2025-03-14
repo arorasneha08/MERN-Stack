@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="state" id="state">
+        <option value="select" class="select">-Select-</option>
+        <option value="Patiala" class="patiala">Patiala</option>
+        <option value="Chandigarh" class="Chandigarh">Chandigarh</option>
+        <option value="ratia" class="ratia">ratia</option>
+        <option value="mansa" class="mansa">mansa</option>
+    </select>
+    <p id="selected-text"></p>
+
+
+    <input type="date" class="date">
+    <p class="selected-date"></p>
+
+
+    <button class="btn">Submit</button>
+    <p class="submit"></p>
+
+</body>
+<script>
+    const selectElem = document.getElementById("state");
+    const selectedText = document.getElementById("selected-text");
+    const handleEvents = (event)=>{
+        selectedText.textContent = `Selected Text: ${event.target.value}`
+    }
+    selectElem.addEventListener("change" , handleEvents);
+
+
+
+    const selectDate = document.querySelector(".date"); 
+    const selecteddate = document.querySelector(".selected-date"); 
+    
+    selectDate.addEventListener("input",(event)=>{
+        let date = event.target.value ; 
+        let dateParts = date.split("-");
+        let day = dateParts[2];
+        let month = dateParts[1];
+        let year = dateParts[0]; 
+        let dateString = `${day}-${month}-${year}`;
+        selecteddate.textContent = `date of birth : ${dateString}`; 
+    })
+
+
+    const date = new Date();
+    let submittedDate = document.querySelector(".submit"); 
+    // console.log(date);
+    document.querySelector(".btn").addEventListener("click",(event)=>{
+        console.log(`Form Submitted on ${date.toLocaleString()}`)
+        submittedDate.innerHTML = `Form Submitted on ${date.toLocaleString()} `
+    })
+    
+</script>
+</html>

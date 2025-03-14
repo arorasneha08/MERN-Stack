@@ -1,0 +1,46 @@
+tr{
+    height: 70px;
+    width : 90px;
+    justify-content: top left;
+}
+td{
+    height: 100px;
+    width: 100px;
+    justify-content: top center;
+    vertical-align: top;
+}
+#smile{
+    color: rgb(65, 6, 120);
+    text-decoration: underline ;
+    text-align: center;
+}
+#smileday{
+    background-color: rgb(239, 239, 66);
+}
+#erikson{
+    color: rgb(65, 6, 120);
+    text-decoration: underline;
+    text-align: center;
+}
+#eriksonDay{
+    background-color: darkgreen;
+}
+#pasta{
+    color: rgb(65, 6, 120);
+    text-decoration: underline;
+    text-align: center;
+}
+#pastaday{
+    background-color: sandybrown;
+}
+.halloween{
+    background-image: url(halloween.jpg);
+    background-size: cover;
+}
+.scorpio{
+    background-image: url(scorpio.webp);
+    background-size: cover;
+}
+.blank{
+    background-color: rgb(181, 180, 180);
+}

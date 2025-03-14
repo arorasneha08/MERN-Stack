@@ -1,0 +1,10 @@
+200 -> ok 
+201 -> create 
+404 -> page not found
+500 -> internal server error
+401 -> unauthorise user 
+
+
+jwt token authentication :- 
+npm i jsonwebtoken
+npm i cookie-parser

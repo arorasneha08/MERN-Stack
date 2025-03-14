@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown{
+            position: relative;
+            display: inline-block;
+            border: 2px solid linen;
+        }
+        .dropdowncontent{
+            display: none;
+            position: absolute;
+            background-color: lightcyan;
+            box-sizing: border-box;
+            box-shadow: inset;
+            padding: 20px 20px ;
+
+        }
+        .dropdown:hover .dropdowncontent{
+            display: inline-block;
+        }
+        .Fruits{
+            padding: 20px 20px ;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <div class="Fruits">Fruits</div>
+        <div class="dropdowncontent">
+            <p>litchi</p>
+            <p>mango</p>
+            <p>orange</p>
+            <p>kiwi</p>
+            <p>cherry</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.bg1 {
+    color: red;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.bg2-ok {
+    background-color: lightgreen;
+    padding: 2px 5px;
+    border-radius: 4px;
+}

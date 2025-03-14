@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MouseEvents</title>
+    <style>
+        .rect{
+            height: 230px;
+            width: 100px;
+            justify-content: center;
+        }
+        .addTransition{
+            border-radius: 50%;
+        }
+        .addTransition3{
+            border-radius: 50%;
+            background-color: yellow;
+            translate: -30rem 0 ;
+        }
+        .addTransition5{
+            translate: -30rem 0 ;
+        }
+        .addTransition4{
+            border-radius: 50%;
+            background-color: yellow;
+            translate: 30rem 0 ;
+        }
+        .addTransition6{
+            border-radius: 0%;
+            background-color: yellow;
+            translate: 0rem 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="rect" ></div>
+        <button id="mybtn">Click Me!</button>
+    </section>
+</body>
+<script>
+    let mybutton = document.getElementById("mybtn"); 
+    let rectDiv = document.querySelector(".rect"); 
+
+    // mybutton.addEventListener("click", handleMouseEvents); 
+    // mybutton.addEventListener("click" , ()=>{
+    //     handleMouseEvents(); 
+    // });
+
+    const handleMouseEvents = () => {
+        console.log("click"); 
+        rectDiv.style.backgroundColor = "#f5ee62"; 
+    }; 
+
+    const handleMouseEvents2 = () =>{
+    };
+    const handleMouseEvents3= () =>{
+        console.log("mouse over");
+        rectDiv.classList.add("addTransition3"); 
+    };
+    const handleMouseEvents4= () =>{
+        console.log("mouse over");
+        rectDiv.classList.add("addTransition4"); 
+    };
+    const handleMouseEvents5= () =>{
+        console.log("mouse over");
+        rectDiv.classList.add("addTransition5"); 
+    };
+    const handleMouseEvents6= () =>{
+        console.log("mouse over");
+        rectDiv.classList.add("addTransition6"); 
+    };
+
+    mybutton.addEventListener("click" , ()=>{
+        handleMouseEvents(); 
+    }); 
+
+    mybutton.addEventListener("dblclick",()=>{
+        handleMouseEvents2(); 
+    })
+    mybutton.addEventListener("mouseover", handleMouseEvents3); 
+    mybutton.addEventListener("mouseout",handleMouseEvents4);
+    mybutton.addEventListener("mousedown",handleMouseEvents5);
+    mybutton.addEventListener("mouseup", handleMouseEvents6); 
+</script>
+</html>
